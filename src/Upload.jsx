@@ -18,7 +18,7 @@ function Upload() {
 
     setIsProcessing(true);
     try {
-      const response = await axios.post("http://localhost:5000/upload", formData, {
+      const response = await axios.post("https://ml-project-website.onrender.com/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
